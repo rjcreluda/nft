@@ -15,9 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('front.app');
+    //return view('front.app');
+    return redirect()->route('revolution');
 });
-Route::get('/nft-revolution', function(){
+
+/* Route::get('/nft-revolution', function(){
     return view('front.revolution');
+}); */
+
+//Route::post('/register', [ RegisterController::class, 'handleRegistration'] )->name('register');
+
+Route::group([ 'middleware' => 'Language'], function () {
+	Route::get('/nft-revolution',"\App\Http\Controllers\HomeController@index")->name('revolution');
+	Route::get('/change-language/{lang}',"\App\Http\Controllers\HomeController@changeLang");
 });
-Route::post('/register', [ RegisterController::class, 'handleRegistration'] )->name('register');

@@ -101,6 +101,13 @@ https://templatemo.com/tm-563-seo-dream
                               </a>
                           </li>
                       </ul>
+                      <div class="languages">
+                        <label>Language</label>
+                        <select onchange="changeLanguage(this.value)">
+                          <option {{session()->has('lang_code')?(session()->get('lang_code')=='en'?'selected':''):''}} value="en">English</option>
+                          <option {{session()->has('lang_code')?(session()->get('lang_code')=='fr'?'selected':''):''}} value="fr">French</option>
+                        </select>
+                      </div>
                   </div>
 
               </div>
@@ -115,8 +122,8 @@ https://templatemo.com/tm-563-seo-dream
     <div class="w-container">
         <div class="row mb-5 pt-3">
             <div class="col-lg-12 text-center text-white">
-              <h1>NFTs are making people rich</h1>
-              <h3>And you can Become <span class="text-warning">The Next Millionaire</span> ...</h3>
+              <h1>{{ __("revolution.header_title") }}</h1>
+              <h3>{{ __("revolution.header_subtitle") }} <span class="text-warning">{{ __("revolution.header_subtitle_marks") }}</span> ...</h3>
             </div>
       </div>
       <div class="row">
@@ -127,7 +134,7 @@ https://templatemo.com/tm-563-seo-dream
         <div class="col-lg-4">
           <div class="card register-card">
               <div class="card-header">
-                  CHANGE YOUR LIFE TODAY
+                  {{ __('revolution.form.title') }}
               </div>
               <div class="card-body">
                   <form>
@@ -141,11 +148,11 @@ https://templatemo.com/tm-563-seo-dream
                           <input class="form-control" name="email" placeholder="Email Address" />
                       </div>
                       <div class="form-group mb-4">
-                          <button type="submit" class="btn btn-lg btn-warning btn-block submit-register-button">REGISTER NOW</button>
+                          <button type="submit" class="btn btn-lg btn-warning btn-block submit-register-button"> {{ __('revolution.form.submit_btn') }}</button>
                       </div>
                       <div class="form-group mb-4">
                           
-                          <p><input type="checkbox" name="subscribe" /> Yes, I would like to receive updates & exclusive benefits via email.</p>
+                          <p><input type="checkbox" name="subscribe" /> {{ __('revolution.form.subscribe_text') }}</p>
                       </div>
                   </form>
               </div>
@@ -197,7 +204,7 @@ https://templatemo.com/tm-563-seo-dream
           <div class="section-heading">
             <!-- <h2>Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2> -->
             <h2 class="display-2">
-              Join Us and Start Getting Rich with NFTs!
+              {{ __('revolution.join_section.title') }}
             </h2>
           </div>
           <p>
@@ -239,9 +246,9 @@ https://templatemo.com/tm-563-seo-dream
                     <div class="text-center my-4">
                         <i class="fa fa-tachometer feature-icon"></i>
                     </div>
-                    <h4>LASER-ACCURATE PERFORMANCE</h4>
+                    <h4>{{ __('revolution.feature_section.one.title') }}</h4>
                     <p>
-                        There is no other software in the world that outperforms the NFT Trader in terms of its security and accuracy on the blockchain. That's why our members from around the world trust us to double, triple and quadruple their hard earned money.
+                        {{ __('revolution.feature_section.one.content') }}
                 </div>
             </div>
           </div>
@@ -253,9 +260,9 @@ https://templatemo.com/tm-563-seo-dream
                     <div class="text-center my-4">
                         <i class="fa fa-cogs feature-icon" aria-hidden="true"></i>
                     </div>
-                    <h4>SUPERIOR TECHNOLOGY</h4>
+                    <h4>{{ __('revolution.feature_section.two.title') }}</h4>
                     <p>
-                        The NFT trader uses the ETH blockchain that has been created using the most advanced programming the world has ever seen. Similar to Bitcoin, Ethereum is an open-source, decentralised project. NFT trader can execute smart contracts and build databases for decentralised finance, or DeFi; nonfungible tokens, or NFTs; and gaming. These applications are not possible on the Bitcoin network.
+                        {{ __('revolution.feature_section.two.content') }}
                     </p>
                 </div>
             </div>
@@ -268,10 +275,9 @@ https://templatemo.com/tm-563-seo-dream
                     <div class="text-center my-4">
                         <i class="fa fa-trophy feature-icon" aria-hidden="true"></i>
                     </div>
-                    <h4>AWARD-WINNING ARTISTS AND DESIGNERS</h4>
+                    <h4>{{ __('revolution.feature_section.three.title') }}</h4>
                     <p>
-                        NFTs are valuable because they verify the authenticity of a non-fungible asset. This makes these assets unique and one of a kind. Picasso's paintings are non-fungible. While anyone can make copies of his paintings, the original painting remains irreplaceable and unique. 
-NFT trader works only with top industry leaders who are known digital artists and designers.
+                        {{ __('revolution.feature_section.three.content') }}
                     </p>
                 </div>
             </div>
@@ -290,7 +296,7 @@ NFT trader works only with top industry leaders who are known digital artists an
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2 style="text-align: center;">HOW IT WORKS</h2>
+            <h2 style="text-align: center;"> {{ __('revolution.step_section.title') }}</h2>
           </div>
         </div>
       </div>
@@ -307,9 +313,9 @@ NFT trader works only with top industry leaders who are known digital artists an
                     <div class="my-4">
                         <i class="fa fa-pencil-square-o feature-icon"></i>
                     </div>
-                    <h4>REGISTER ON THE SITE</h4>
+                    <h4>{{ __('revolution.step_section.one.title') }}</h4>
                     <p>
-                        Once your registration is accepted you will automatically become the newest member of the NFT Trader system. And you will get to claim, purchase and trade on NFTs.
+                        {{ __('revolution.step_section.one.content') }}
                     </p>
                 </div>
             </div>
@@ -325,9 +331,9 @@ NFT trader works only with top industry leaders who are known digital artists an
                     <div class="text-center my-4">
                         <i class="fa fa-shopping-cart feature-icon" aria-hidden="true"></i>
                     </div>
-                    <h4>PURCHASE YOUR NFT</h4>
+                    <h4>{{ __('revolution.step_section.two.title') }}</h4>
                     <p>
-                        Like any business, you need working capital to get started. So to start profiting with the NFT trader you must invest any amount you desire of $300 or more
+                        {{ __('revolution.step_section.two.content') }}
                     </p>
                 </div>
             </div>
@@ -343,9 +349,9 @@ NFT trader works only with top industry leaders who are known digital artists an
                     <div class="text-center my-4">
                         <i class="fa fa-check-circle feature-icon" aria-hidden="true"></i>
                     </div>
-                    <h4>FINISH</h4>
+                    <h4>{{ __('revolution.step_section.three.title') }}</h4>
                     <p>
-                        Once you have purchased your NFT you can follow along hands free as your investment continues to rise.
+                        {{ __('revolution.step_section.three.content') }}
                     </p>
                 </div>
             </div>
@@ -355,7 +361,7 @@ NFT trader works only with top industry leaders who are known digital artists an
     </div>
     <div class="plan-section-bottom d-flex justify-content-center align-items-end">
         <div style="position: relative; top: 30px; width: 25%;" class="text-center">
-            <a href="#" class="btn btn-lg btn-warning btn-block px-5 py-3" id="btn-open-account"> OPEN FREE ACCOUNT </a>
+            <a href="#" class="btn btn-lg btn-warning btn-block px-5 py-3" id="btn-open-account"> {{ __('revolution.step_section.open_account_btn') }} </a>
         </div>
     </div>
   </div>
@@ -367,7 +373,7 @@ NFT trader works only with top industry leaders who are known digital artists an
             <div class="col-md-12">
                 <strong>IMPORTANT:</strong><br />
                 <p class="lead">
-                    Earnings and Legal Disclaimers Earnings and income representations made by NFT Trader, (collectively “This Website” only used as aspirational examples of your earnings potential. The success of those in the testimonials and other examples are exceptional results and therefore are not intended as a guarantee that you or others will achieve the same results. Individual results will vary and are entirely dependent on your use of NFT Trader. This Website is not responsible for your actions. You bear sole responsibility for your actions and decisions when using products and services and therefore you should always exercise caution and due diligence. You agree that this Website is not liable to you in any way for the results of using our products and services. See our Terms & Conditions for our full disclaimer of liability and other restrictions. This Website may receive compensation for products and services they recommend to you. If you do not want This Website to be compensated for a recommendation, then we advise that you search online for a similar product through a non-affiliate link. Trading can generate notable benefits, however, it also involves the risk of partial/full loss of the invested capital, therefore, you should consider whether you can afford to invest.
+                    {{ __('revolution.note_section.text') }}
                 </p>
             </div>
         </div>
@@ -378,7 +384,7 @@ NFT trader works only with top industry leaders who are known digital artists an
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2022 NFT. All Rights Reserved.
+          <p>Copyright © 2022 NFT. {{ __('revolution.copyright') }}
 
           <br><!-- Web Designed by <a rel="nofollow" href="https://templatemo.com" title="free CSS templates">TemplateMo</a> --></p>
         </div>
@@ -395,7 +401,11 @@ NFT trader works only with top industry leaders who are known digital artists an
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
+  <script type="text/javascript">
+    function changeLanguage( lang ){
+      window.location='{{ url("change-language")}}/'+lang;
+    }
+  </script>
   
 
 </body>

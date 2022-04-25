@@ -131,7 +131,12 @@ header .nav-link {
 .rating, .accordion__button, .roadmap__inner, .social, .social-btns {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 30px;
 }
+.languages select{
+  border-radius: 5px;
+}
+.languages label{ margin-right: 8px; }
 
 .padding-block{
     padding-block: 80px;
