@@ -36,6 +36,9 @@
           margin: 20px auto;
           text-align: center;
         }
+        a.social__link {
+            font-size: 25px;
+        }
     </style>
 <!--
 
@@ -68,17 +71,17 @@ https://templatemo.com/tm-563-seo-dream
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-xl">
-              <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler--icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                      <a class="nav-link" aria-current="page" href="/">Home</a>
+                      <!--<a class="nav-link" aria-current="page" href="/">Home</a>
                       <a class="nav-link" href="#roadmap">Roadmap</a>
                       <a class="nav-link" href="#artist">Artist</a>
                       <a class="nav-link" href="#team">Team</a>
-                      <a class="nav-link" href="#faq">Faq</a>
+                      <a class="nav-link" href="#faq">Faq</a> -->
                   </div>
                   <div class="social-btns">
                       <ul class="social">
@@ -127,8 +130,7 @@ https://templatemo.com/tm-563-seo-dream
                   CHANGE YOUR LIFE TODAY
               </div>
               <div class="card-body">
-                  <form method="POST" action="{{ route('register')}}">
-                      @csrf
+                  <form>
                       <div class="form-group mb-4 mt-1">
                           <input class="form-control" name="first_name" placeholder="First Name" />
                       </div>
@@ -154,36 +156,38 @@ https://templatemo.com/tm-563-seo-dream
   </div>
 
   <div id="features" class="features section">
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-lg-12">
-          <div class="features-content">
-            <div class="row pt-4 mb-5">
-              <div class="col-lg-3">
-                <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                    <img src="assets/images/bitgo.png" alt="sec-1" class="img-secure" />
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                    <img src="assets/images/mcafee.png" alt="sec-1" class="img-secure" />
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                    <img src="assets/images/norton.png" alt="sec-1" class="img-secure" />
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                    <img src="assets/images/secure-trading.png" alt="sec-1" class="img-secure" />
+    <div style="background-color: #fff;">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <div class="features-content">
+                <div class="row pt-4 mb-5">
+                  <div class="col-lg-3">
+                    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <img src="assets/images/bitgo.png" alt="sec-1" class="img-secure" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <img src="assets/images/mcafee.png" alt="sec-1" class="img-secure" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <img src="assets/images/norton.png" alt="sec-1" class="img-secure" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <img src="assets/images/secure-trading.png" alt="sec-1" class="img-secure" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </div> 
   </div>
 
   <div id="about" class="about-us section join-us-section">
@@ -363,7 +367,7 @@ NFT trader works only with top industry leaders who are known digital artists an
             <div class="col-md-12">
                 <strong>IMPORTANT:</strong><br />
                 <p class="lead">
-                    Earnings and Legal Disclaimers Earnings and income representations made by Bitcoin Revolution, (collectively “This Website” only used as aspirational examples of your earnings potential. The success of those in the testimonials and other examples are exceptional results and therefore are not intended as a guarantee that you or others will achieve the same results. Individual results will vary and are entirely dependent on your use of Bitcoin Revolution. This Website is not responsible for your actions. You bear sole responsibility for your actions and decisions when using products and services and therefore you should always exercise caution and due diligence. You agree that this Website is not liable to you in any way for the results of using our products and services. See our Terms & Conditions for our full disclaimer of liability and other restrictions. This Website may receive compensation for products and services they recommend to you. If you do not want This Website to be compensated for a recommendation, then we advise that you search online for a similar product through a non-affiliate link. Trading can generate notable benefits, however, it also involves the risk of partial/full loss of the invested capital, therefore, you should consider whether you can afford to invest.
+                    Earnings and Legal Disclaimers Earnings and income representations made by NFT Trader, (collectively “This Website” only used as aspirational examples of your earnings potential. The success of those in the testimonials and other examples are exceptional results and therefore are not intended as a guarantee that you or others will achieve the same results. Individual results will vary and are entirely dependent on your use of NFT Trader. This Website is not responsible for your actions. You bear sole responsibility for your actions and decisions when using products and services and therefore you should always exercise caution and due diligence. You agree that this Website is not liable to you in any way for the results of using our products and services. See our Terms & Conditions for our full disclaimer of liability and other restrictions. This Website may receive compensation for products and services they recommend to you. If you do not want This Website to be compensated for a recommendation, then we advise that you search online for a similar product through a non-affiliate link. Trading can generate notable benefits, however, it also involves the risk of partial/full loss of the invested capital, therefore, you should consider whether you can afford to invest.
                 </p>
             </div>
         </div>

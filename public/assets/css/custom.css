@@ -76,6 +76,9 @@ body {
     font-weight: 700;
   }
   
+  .navbar-brand img{
+      width: 115px;
+  }
   
   /*
    * Footer
