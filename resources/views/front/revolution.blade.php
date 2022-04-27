@@ -74,6 +74,7 @@ https://templatemo.com/tm-563-seo-dream
               <a class="navbar-brand" href=""><img src="assets/images/logo.png" alt="logo"></a>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler--icon"></span>
+                  <i class="fa fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
@@ -129,7 +130,7 @@ https://templatemo.com/tm-563-seo-dream
       <div class="row">
         <div class="col-lg-8 align-self-start">
           <div class="embed-responsive">
-              <video src="nft.mp4" width="530" height="355" controls class="video embed-responsive-item"></video>
+              <video src="nft.mp4" controls class="video embed-responsive-item"></video>
         </div></div>
         <div class="col-lg-4">
           <div class="card register-card">
@@ -215,7 +216,7 @@ https://templatemo.com/tm-563-seo-dream
         
         <div class="col-lg-6">
           <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-            <img src="assets/images/about-left-image.png" alt="">
+            <img src="assets/images/about-left-image.png" alt="" class="img-fluid">
           </div>
         </div>
         
@@ -360,7 +361,7 @@ https://templatemo.com/tm-563-seo-dream
       </div>
     </div>
     <div class="plan-section-bottom d-flex justify-content-center align-items-end">
-        <div style="position: relative; top: 30px; width: 25%;" class="text-center">
+        <div class="text-center">
             <a href="#" class="btn btn-lg btn-warning btn-block px-5 py-3" id="btn-open-account"> {{ __('revolution.step_section.open_account_btn') }} </a>
         </div>
     </div>
